@@ -1,0 +1,202 @@
+@font-face {
+    font-family: "TTLakes";
+    font-weight: 400;
+    src:
+        local("TTLakes"),
+        url("/TTLakes/TTLakes-Black.woff") format("woff");
+}
+/* Mobile Responsive Design */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "TTLakes", sans-serif;
+}
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #f8f8f8;
+}
+.container__header {
+    width: 100%;
+    background-color: #ffffff;
+}
+.container__header__nav {
+    display: flex;
+    justify-content: space-between;
+}
+.container__header__nav__list {
+    margin: 16px;
+    padding: 16px 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    gap: 20px;
+}
+.container__header__nav__list__items-tablet {
+    display: none;
+}
+.container__header__nav__list__items-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    gap: 20px;
+}
+.container__header__nav__list__item span {
+    margin-right: 10px;
+}
+.container__header__nav__list__separator {
+    display: none;
+}
+.link {
+    text-decoration: none;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+}
+.link .logo-container {
+    width: 100%;
+}
+.link .image-container {
+    width: 40px;
+    height: 40px;
+    background-color: #ff3e79;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.link .image-container img {
+    width: 16px;
+    height: 20px;
+}
+.container__services {
+    margin-top: 20px;
+}
+.container__services__title {
+    display: flex;
+    justify-content: space-between;
+}
+.container__services__title__text {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+.container__services__title h1 {
+    font-size: 28px;
+    letter-spacing: -0.6px;
+    line-height: 40px;
+}
+.container__services__title__highlight {
+    width: 4px;
+    height: 40px;
+    background-color: #41f6d7;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-right: 12px;
+    display: inline-block;
+}
+.container__services__title__nav {
+    display: none;
+}
+.container__services .container__nav .container__header__nav__list {
+    overflow-x: scroll;
+}
+.container__services .container__nav .container__header__nav__list .tab {
+    width: 248px;
+    height: 40px;
+    /* padding: 20px; */
+    padding: 16px 8px;
+    letter-spacing: -0.2px;
+    line-height: 24px;
+}
+.container__services .container__nav .container__header__nav__list .tab.active {
+    background-color: #ffffff;
+    border: 2px solid #b8ffec;
+    border-radius: 6px;
+}
+.container__services__content__text {
+    margin: 0 16px;
+}
+.container__services__content__text p {
+    letter-spacing: 0.2px;
+    font-size: 14px;
+    line-height: 18px;
+}
+.container__services__content__button {
+    display: flex;
+    align-items: center;
+    margin: 16px 0px;
+    text-decoration: none;
+    color: #000;
+    letter-spacing: -0.2px;
+    line-height: 24px;
+}
+.container__services__content__button__image {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container__services__content__button__image img {
+    width: 7.41px;
+    height: 10.29px;
+}
+.container__services__content__image {
+    width: 100%;
+}
+.container__services__content__image img {
+    width: 100%;
+}
+/* Tablet Responsive Design */
+@media screen and (min-width: 768px) {
+    .container__header__nav__list__items-tablet {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        list-style: none;
+        gap: 20px;
+    }
+    .container__header__nav__list__separator {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .container__header__nav__list__separator_line {
+        width: 2px;
+        height: 32px;
+        display: inline-block;
+        background-color: #eaeaea;
+    }
+    .container__services__content {
+        display: flex;
+    }
+    .container__services__content__text {
+        width: 50%;
+    }
+    .container__services__content__text p {
+        letter-spacing: 0.2px;
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .container__services__content__image {
+        width: 50%;
+    }
+}
+/* PC Responsive Design */
+@media (min-width: 1120px) {
+    .container__header {
+        display: none;
+    }
+    .container__services__title__nav {
+        display: block;
+    }
+}
