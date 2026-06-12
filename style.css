@@ -3,7 +3,13 @@
     font-weight: 400;
     src:
         local("TTLakes"),
-        url("/TTLakes/TTLakes-Black.woff") format("woff");
+        url(TTLakes/TTLakes-Regular.woff) format("woff");
+}
+@font-face {
+    font-family: "TTLakes DemiBold";
+    src:
+        local("TTLakes"),
+        url(TTLakes/TTLakes-DemiBold.woff) format("woff");
 }
 /* Mobile Responsive Design */
 * {
@@ -93,6 +99,7 @@
     font-size: 28px;
     letter-spacing: -0.6px;
     line-height: 40px;
+    font-family: "TTLakes DemiBold";
 }
 .container__services__title__highlight {
     width: 4px;
